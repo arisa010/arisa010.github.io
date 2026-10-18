@@ -270,3 +270,19 @@ body.panel-open {overflow:hidden;}
 @media (prefers-reduced-motion: reduce) {
   .footer-marquee-track,.strip-track{will-change:auto;}
 }
+
+/* Mobile-only: original newly supplied character art, with a gentle dissolve into white
+   before the fixed-height landing canvas ends. Desktop artwork is untouched. */
+@media (max-width: 760px) {
+  .desktop-character {
+    top: 0;
+    left: calc(50% + 50px);
+    height: 820px;
+    opacity: 1;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 74%, transparent 99%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 74%, transparent 99%);
+  }
+}
+@media (max-width: 380px) {
+  .desktop-character { height: 760px; }
+}
