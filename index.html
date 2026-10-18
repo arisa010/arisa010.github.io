@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Arissa — art, visual studies, design and photography portfolio." />
+  <title>ARISSA — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="portfolio-data.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="strip.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <!-- Portfolio 17 strip moved above the main title, with no selected-works label. -->
+    <section class="editorial-strip" aria-label="Artwork strip">
+      <div class="strip-viewport" aria-label="Scrollable selection of artworks and photography">
+        <div class="strip-track" aria-hidden="true">
+          <span class="strip-item"><img src="assets/strip-thumbs/work-01.webp" alt="Snow impression photograph" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-02.webp" alt="Crying girl portrait" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-03.webp" alt="Pond landscape photograph" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-04.webp" alt="Branch portrait drawing" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-05.webp" alt="Orange car painting" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-06.webp" alt="Pond bird photograph" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-07.webp" alt="Smoking lighting study" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-08.webp" alt="Classical bust study" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-09.webp" alt="Graffiti wall photograph" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-spiral.png" alt="Spiral artwork" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-11.webp" alt="Storm ship painting" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-12.webp" alt="Short hair portrait drawing" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-13.webp" alt="Blurred screen photograph" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-14.webp" alt="Weathered portrait study" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-star.png" alt="Star artwork" loading="lazy" /></span>
+          <span class="strip-item"><img src="assets/strip-thumbs/work-16.webp" alt="Light figure character painting" loading="lazy" /></span>
+        </div>
+      </div>
+    </section>
+
+    <header class="masthead" aria-label="Portfolio header">
+      <div class="masthead-word" aria-label="Portfolio">PORTFOLIO</div>
+      <div class="masthead-name">ARISSA<span class="masthead-period">.</span></div>
+    </header>
+
+    <main class="desktop" aria-label="Interactive portfolio desktop">
+      <img class="desktop-character" src="assets/elf-original.png" alt="Arissa's original painterly illustration of a blonde fantasy elf in a flowing pale dress" fetchpriority="high" />
+      <p class="edition-mark">ARISSA® / VISUAL ARCHIVE — 2026</p>
+      <p class="desktop-instruction">CLICK A FOLDER TO EXPLORE ↗</p>
+
+      <div id="desktop-folders" class="desktop-folders" aria-label="Portfolio categories"></div>
+
+      <!-- Small functional project previews echo the scattered file icons of the reference. -->
+      <div class="desktop-file file-detail" aria-hidden="true">
+        <span class="file-image image-portrait"></span><span class="file-caption">detail_01</span>
+      </div>
+      <div class="desktop-file file-orange" aria-hidden="true">
+        <span class="file-image image-strawberry"></span><span class="file-caption">composition</span>
+      </div>
+      <div class="desktop-file file-black" aria-hidden="true">
+        <span class="file-image image-black"></span><span class="file-caption">…</span>
+      </div>
+      <div class="desktop-file file-aqua" aria-hidden="true">
+        <span class="file-image image-aqua"></span><span class="file-caption">snow_1</span>
+      </div>
+      <div class="desktop-file file-sky" aria-hidden="true">
+        <span class="file-image image-sky"></span><span class="file-caption">???</span>
+      </div>
+    </main>
+
+    <footer class="footer-strip" aria-label="Portfolio information">
+      <div class="footer-brand">arissa<span class="footer-brand-mark">®</span></div>
+      <div class="footer-marquee" aria-label="Art direction, concept art, visual worlds, experiments, design">
+        <div class="footer-marquee-track" aria-hidden="true">
+          <span class="footer-marquee-unit">✳ &nbsp; ART DIRECTION &nbsp; ✳ &nbsp; CONCEPT ART &nbsp; ✳ &nbsp; VISUAL WORLDS &nbsp; ✳ &nbsp; EXPERIMENTS &nbsp; ✳ &nbsp; DESIGN &nbsp; ✳ &nbsp; ILLUSTRATION &nbsp; ✳ &nbsp; DIGITAL ART &nbsp; ✳ &nbsp; MADE WITH CURIOSITY &nbsp; ✳ &nbsp;</span>
+        </div>
+      </div>
+      <div class="footer-end"><span>INDEPENDENT CREATIVE PORTFOLIO</span><span>© 2026 ARISSA</span></div>
+    </footer>
+  </div>
+
+  <div id="overlay" class="window-layer" hidden>
+    <div class="window-backdrop" data-close="true"></div>
+    <section id="finder-window" class="finder-window" role="dialog" aria-modal="true" aria-labelledby="window-title" tabindex="-1">
+      <div class="window-topbar" id="window-drag-handle">
+        <div class="traffic-lights" aria-label="Window controls">
+          <button class="traffic-light red" type="button" id="close-window" aria-label="Close window"><span>×</span></button>
+          <button class="traffic-light yellow" type="button" id="minimize-window" aria-label="Minimize window"><span>−</span></button>
+          <button class="traffic-light green" type="button" id="maximize-window" aria-label="Toggle full screen"><span>+</span></button>
+        </div>
+        <div id="window-title" class="window-top-title">Portfolio</div>
+        <button id="open-fullpage" type="button" class="topbar-expand" aria-label="Expand folder to full-page view">FULL PAGE ↗</button>
+      </div>
+      <div class="window-body">
+        <aside class="finder-sidebar" aria-label="Folder navigation">
+          <span class="sidebar-caption">FAVOURITES</span>
+          <nav id="finder-navigation" class="finder-navigation"></nav>
+          <div class="sidebar-footer"><span class="sidebar-monogram">a.</span><span>2026 ARCHIVE</span></div>
+        </aside>
+        <div class="finder-main">
+          <div class="finder-location"><span>ARISSA</span><span>/</span><span id="folder-breadcrumb">WORK</span></div>
+          <div id="finder-content" class="finder-content"></div>
+        </div>
+      </div>
+      <div class="window-status"><span id="file-count">Portfolio / 2026</span><span>© ARISSA</span></div>
+    </section>
+  </div>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Full artwork preview">
+    <div class="lightbox-toolbar">
+      <span id="lightbox-title" class="lightbox-title"></span>
+      <a id="lightbox-original" class="lightbox-original" href="#" target="_blank" rel="noopener">OPEN ORIGINAL ↗</a>
+      <button id="close-lightbox" type="button" class="lightbox-close" aria-label="Close artwork preview">CLOSE ×</button>
+    </div>
+    <div class="lightbox-image-frame">
+      <img id="lightbox-image" alt="Expanded artwork" />
+      <p id="lightbox-error" class="lightbox-error" hidden>Could not display the image here. Use “OPEN ORIGINAL” above.</p>
+    </div>
+  </dialog>
+</body>
+</html>
